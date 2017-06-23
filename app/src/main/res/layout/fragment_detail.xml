@@ -1,0 +1,131 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="bbr.popularmovies.DetailActivity$DetailFragment"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <TextView
+        android:id="@+id/detail_title"
+        android:layout_width="129dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:layout_marginStart="115dp"
+        tools:layout_editor_absoluteY="204dp"
+        android:layout_marginLeft="52dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <CheckBox
+        android:id="@+id/favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:button="@android:drawable/btn_star"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="56dp"
+        tools:layout_editor_absoluteX="487dp"
+        tools:layout_editor_absoluteY="225dp" />
+
+    <ImageView
+        android:id="@+id/detail_poster"
+        android:layout_width="410dp"
+        android:layout_height="187dp"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="130dp"
+        tools:layout_conversion_absoluteWidth="32dp"
+        tools:layout_conversion_absoluteHeight="200dp"
+        tools:layout_editor_absoluteY="2dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+    <TextView
+        android:id="@+id/detail_date"
+        android:layout_width="81dp"
+        android:layout_height="73dp"
+        tools:layout_conversion_absoluteX="32dp"
+        tools:layout_conversion_absoluteY="130dp"
+        tools:layout_conversion_absoluteWidth="0dp"
+        tools:layout_conversion_absoluteHeight="16dp"
+        tools:layout_editor_absoluteY="201dp"
+        app:layout_constraintLeft_toRightOf="@+id/detail_title"
+        android:layout_marginLeft="44dp" />
+
+    <TextView
+        android:id="@+id/detail_rating"
+        android:layout_width="84dp"
+        android:layout_height="63dp"
+        tools:layout_conversion_absoluteX="32dp"
+        tools:layout_conversion_absoluteY="146dp"
+        tools:layout_conversion_absoluteWidth="0dp"
+        tools:layout_conversion_absoluteHeight="16dp"
+        tools:layout_editor_absoluteY="211dp"
+        app:layout_constraintRight_toLeftOf="@+id/favorite"
+        android:layout_marginRight="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/detail_date"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.588" />
+
+
+    <TextView
+        android:id="@+id/detail_synopsis"
+        android:layout_width="284dp"
+        android:layout_height="66dp"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="330dp"
+        tools:layout_conversion_absoluteWidth="64dp"
+        tools:layout_conversion_absoluteHeight="16dp"
+        tools:layout_editor_absoluteY="299dp"
+        tools:layout_editor_absoluteX="63dp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/trailers_recycler_view"
+        android:layout_width="339dp"
+        android:layout_height="115dp"
+        android:scrollbars="vertical"
+        tools:layout_conversion_absoluteHeight="165dp"
+        tools:layout_conversion_absoluteWidth="64dp"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="346dp"
+        tools:layout_editor_absoluteX="32dp"
+        tools:layout_editor_absoluteY="481dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/reviews_recycler_view"
+        android:layout_width="275dp"
+        android:layout_height="67dp"
+        android:scrollbars="vertical"
+        tools:layout_conversion_absoluteHeight="165dp"
+        tools:layout_conversion_absoluteWidth="64dp"
+        tools:layout_conversion_absoluteX="0dp"
+        tools:layout_conversion_absoluteY="511dp"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="392dp" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_begin="20dp"
+        android:orientation="vertical" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline2"
+        app:layout_constraintGuide_begin="20dp"
+        android:orientation="horizontal" />
+
+
+</android.support.constraint.ConstraintLayout>
